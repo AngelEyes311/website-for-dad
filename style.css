@@ -1,0 +1,387 @@
+
+
+
+/*
+--color1: hsla(24, 25%, 8%, 1);
+--color2: hsla(224, 24%, 25%, 1);
+--color3: hsla(214, 24%, 55%, 1);
+--color4: hsla(236, 86%, 20%, 1);
+--color5: hsla(222, 63%, 36%, 1);
+--color6: hsla(214, 50%, 60%, 1);
+
+/* HEX
+$color1: #14110f;
+$color2: #30343f;
+$color3: #6b7a8d;
+$color4: #070a33;
+$color5: #22335b;
+$color6: #4c6e99;
+
+/* HSL
+$color1: hsla(24, 25%, 8%, 1);
+$color2: hsla(224, 24%, 25%, 1);
+$color3: hsla(214, 24%, 55%, 1);
+$color4: hsla(236, 86%, 20%, 1);
+$color5: hsla(222, 63%, 36%, 1);
+$color6: hsla(214, 50%, 60%, 1);
+
+/* RGB
+$color1: rgba(20, 17, 15, 1);
+$color2: rgba(48, 52, 63, 1);
+$color3: rgba(107, 122, 141, 1);
+$color4: rgba(7, 10, 51, 1);
+$color5: rgba(34, 51, 91, 1);
+$color6: rgba(76, 110, 153, 1);
+*/
+/****ROOT CSS********************/
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #14110f;
+  background-color: rgba(76, 110, 153, 1);
+  font-family: 'Maven Pro', 'Ariel', 'Verdana', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left !important;
+}
+
+h2, h3, h4 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.pcard {
+  font-family: 'Cinzel', serif;
+  font-variant: small-caps;
+}
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+h3 {
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px rgba(7, 10, 51, 1)
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  padding: 10px 10px;
+  font-size:  clamp(2rem, 4.25vw, 4rem);
+  letter-spacing: 1px;
+
+}
+
+/******HEADER**************************/
+.title {
+  text-align: center;
+  border: 5px double white;
+  margin-top: 4rem ;
+  color: white;
+  letter-spacing: 1px;
+  font-size:  clamp(2rem, 4.25vw, 4rem);
+  font-weight: 700;
+  text-shadow: 3px 3px 1px rgba(7, 10, 51, 1);
+}
+
+header {
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  width: 100vw;
+  height: 120vh;
+  color: white;
+
+}
+
+#header {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("danielopt.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.photo {
+  height: 350px;
+  width: auto;
+  float: center;
+  box-shadow: 5px 5px 10px rgba(107, 122, 141, 0.5);
+
+}
+
+.grid-container {
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 20px 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 400;
+}
+
+.name {
+  margin-top: 1em;
+  font-weight: 700;
+  font-size: 3.5vw;
+  text-shadow: 3px 3px 1px rgba(7, 10, 51, 1);
+  text-align: center;
+}
+
+.pefe {
+  margin-top: 0.8em;
+  margin-bottom: 3em;
+  font-weight: 700;
+  font-size: 2vw;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(7, 10, 51, 1);
+}
+
+hr {
+  color: white;
+  height: 2px;
+}
+
+a:hover {
+  color: rgba(7, 10, 51, 1);
+  background-color: white;
+}
+
+/*****NAVIGATION********************/
+#navbar {
+  overflow: hidden;
+  background-color: #070A33;
+  z-index: 1;
+  font-size: 1.5vw;
+  margin-bottom: 50px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-variant: small-caps;
+  font-size: 1.5vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#navbar a:hover {
+  background: #070A33;
+  border: solid #4c6e99 3px;
+  font-variant: small-caps;
+  color: #white;
+  text-decoration: none;
+}
+
+#navbar a:active {
+  background-color: #4c6e99;
+  color: white;
+}
+
+.content {
+	padding:16px;
+}
+.sticky {
+	position:fixed;
+  
+	width:100%;
+}
+.sticky .content {
+	padding-top: 60px;
+}
+
+/************SERVICES***********/
+
+.servcont {
+  text-align: center;
+}
+
+.sec-head {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 2em;
+	font-family: 'Cinzel',serif;
+	margin-top: 50px;
+  color: #14110F;
+}
+.flex-container {
+	display: flex;
+	flex-flow: row-wrap;
+}
+.contain {
+	background-color: #4c6e99;
+	margin: 20px;
+	text-align: center;
+	padding: 15px;
+	border:3px solid white;
+	color: white;
+}
+
+
+/*****EXPERIENCE***************/
+
+#experience {
+  background-color: #6B7A8D;
+  color: white;
+  text-align: left;
+}
+
+ul li span p {
+  text-align: left;
+}
+
+pre {
+	font-family: 'Maven Pro';
+	font-size: 2vw;
+	font-weight: 400;
+	color: #14110f;
+	background-color: #6B7A8D;
+  margin-top: 2em;
+  text-indent: 150px;
+}
+
+.cont {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.position {
+	text-indent: 50px;
+}
+
+.ctrjob {
+	column-count: 2;
+}
+
+/**EDUCATION****************************/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(7, 10, 51, 1);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+.hrcard {
+  color: rgba(7, 10, 51, 1);
+  height: 2px;
+}
+
+.col-container {
+  display: flex;
+  width: 100%;
+}
+.col {
+  flex: 1;
+  padding: 16px;
+}
+
+/*****CREDENTIALS******************/
+
+#credentials {
+  background-color: #6B7A8D;
+  color: white;
+}
+
+
+
+/**FOOTER************************/
+
+.foot {
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #070A33;
+  height: 7em;
+  width: 100%;
+  position: absolute;
+  padding-top: 3em;
+}
+
+.end {
+  align-content: end;
+  text-align: right;
+  font-size: 10px;
+  color: #22335B;
+}
+
+
+/****MEDIA QUERIES*************************/
+
+
+@media screen and (max-width: 400px) {
+  header {
+    background-image: url('smdaniel.jpg');
+    width: 100%;
+    height: 130vh;
+  }
+  #services {
+    margin-top: 10vh;
+  }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .headimage {
+    background-image: url('mddaniel.jpg');
+    width: 100%;
+    height: 100vh;
+  }
+  .headtxt {
+    border: none;
+  }
+
+}
+
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
